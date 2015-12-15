@@ -1,0 +1,30 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApplication1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //a way to do it
+            Console.WriteLine("Start(n)=:");
+            int start = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Ending Num=:");
+            int end = Convert.ToInt32(Console.ReadLine());
+            int ans=0;
+            for (int x=start; x < end+1; ++x)
+            {
+                ans += x;
+            }
+            Console.WriteLine("Slow way:"+ans);
+
+            //best way
+            ans=(end *(end + 1) )/ 2;
+            Console.WriteLine("Fast way:"+ans);
+        }
+    }
+}
