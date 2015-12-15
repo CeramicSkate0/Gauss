@@ -1,2 +1,3 @@
 # Gauss
-How to program math ;D
+How to properly do math ;D
+Thanks Gauss!
